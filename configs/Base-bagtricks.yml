@@ -28,6 +28,13 @@ INPUT:
   PADDING:
     ENABLED: true
     SIZE: 10
+  CJ:
+    ENABLED: True
+    PROB: 0.5
+    BRIGHTNESS: 0.15
+    CONTRAST: 0.15
+    SATURATION: 0.1
+    HUE: 0.1
 
 DATALOADER:
   NUM_INSTANCE: 4
