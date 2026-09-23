@@ -93,7 +93,10 @@ class MEVID(ImageDataset):
                 pid_counter += 1
             mapped_pid = self.pid_map[pid]
 
-            for i in range(start_idx, end_idx + 1):
+            for step, i in enumerate(range(start_idx, end_idx + 1)):
+                if step % 20 != 0:
+                    continue
+                
                 idx = i - 1 if start_idx > 0 else i
                 if idx < 0 or idx >= len(img_names):
                     continue
@@ -116,7 +119,10 @@ class MEVID(ImageDataset):
             start_idx, end_idx, pid, outfit_id, camid = [int(float(x)) for x in parts]
 
             tracklet_samples = []
-            for i in range(start_idx, end_idx + 1):
+            for step, i in enumerate(range(start_idx, end_idx + 1)):
+                if step % 20 != 0:
+                    continue
+                
                 idx = i - 1 if start_idx > 0 else i
                 if idx < 0 or idx >= len(img_names):
                     continue
