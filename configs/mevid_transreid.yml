@@ -10,7 +10,7 @@ MODEL:
     DEPTH: "base"
     STRIDE_SIZE: [12, 12]
     SIE_COE: 3.0
-    DROP_PATH: 0.1
+    DROP_PATH_RATIO: 0.1
     PRETRAIN_PATH: ""
   HEADS:
     EMBEDDING_DIM: 768
