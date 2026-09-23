@@ -8,6 +8,7 @@ MODEL:
   BACKBONE:
     NAME: "build_vit_backbone"
     DEPTH: "base"
+    FEAT_DIM: 768
     STRIDE_SIZE: [12, 12]
     SIE_COE: 3.0
     DROP_PATH_RATIO: 0.1
