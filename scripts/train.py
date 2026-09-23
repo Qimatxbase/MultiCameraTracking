@@ -9,6 +9,8 @@ import collections
 import collections.abc
 collections.Mapping = collections.abc.Mapping
 collections.Iterable = collections.abc.Iterable
+import torch
+torch.backends.cudnn.enabled = False
 
 try:
     import fastreid
